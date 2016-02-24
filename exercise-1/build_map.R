@@ -3,13 +3,12 @@
 
 ### Steps:
 # 1.  Put this map into a Shiny application 
-# 2.  Add a select box that allows you to select which column is on the map (i.e., beef, dairy, total.fruits, etc.)
+# BONUS:  Add a select box that allows you to select which column is on the map (i.e., beef, dairy, total.fruits, etc.)
 
 # Tutorial on adding widgets: http://shiny.rstudio.com/tutorial/lesson3/
 # Shiny widget gallery: http://shiny.rstudio.com/gallery/widget-gallery.html
-# Converting a string to a variable name (this will help):
+# Evaluating a string as a variable name (will come in handy):
 # http://www.r-bloggers.com/converting-a-string-to-a-variable-name-on-the-fly-and-vice-versa-in-r/
-
 
 # Build map function
 build_map <- function(df, column) {
