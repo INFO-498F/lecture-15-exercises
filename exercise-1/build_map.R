@@ -1,15 +1,6 @@
 ### Example from plotly ###
 # Original: https://plot.ly/r/choropleth-maps/
 
-### Steps:
-# 1.  Put this map into a Shiny application 
-# BONUS:  Add a select box that allows you to select which column is on the map (i.e., beef, dairy, total.fruits, etc.)
-
-# Tutorial on adding widgets: http://shiny.rstudio.com/tutorial/lesson3/
-# Shiny widget gallery: http://shiny.rstudio.com/gallery/widget-gallery.html
-# Evaluating a string as a variable name (will come in handy):
-# http://www.r-bloggers.com/converting-a-string-to-a-variable-name-on-the-fly-and-vice-versa-in-r/
-
 # Build map function
 build_map <- function(df, column) {
   df$hover <- with(df, paste(state, '<br>', "Beef", beef, "Dairy", dairy, "<br>",

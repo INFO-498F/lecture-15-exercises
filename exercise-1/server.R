@@ -9,7 +9,5 @@ data <- read.csv("https://raw.githubusercontent.com/plotly/datasets/master/2011_
 
 shinyServer(function(input, output) {
   # Create a map via your build_map function
-  output$map <- renderPlotly({ 
-    build_map(data, input$export)  
-  })
+  
 })
