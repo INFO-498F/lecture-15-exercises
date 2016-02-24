@@ -1,5 +1,5 @@
 ### Build Scatter ###
-build_scatter <- function(data, xvar = 'beef', yvar = 'dairy', search = '') {
+build_scatter <- function(data, xvar = 'beef', yvar = 'dairy') {
   # Filter down to state, then graph
   
   # Get x and y max
@@ -7,7 +7,6 @@ build_scatter <- function(data, xvar = 'beef', yvar = 'dairy', search = '') {
   ymax <- max(data[,eval(parse(text = 'yvar'))]) * 1.5
   
   data %>% 
-  filter(grepl(search, state)) %>% 
   plot_ly(x = eval(parse(text = xvar)), 
           y = eval(parse(text = yvar)), 
           mode='markers', 

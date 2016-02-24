@@ -13,6 +13,8 @@ shinyServer(function(input, output) {
   output$map <- renderPlotly({ 
     build_map(data, input$export)  
   })
+  
+  # Render your scatterplot as part of your `output` element
   output$scatter <- renderPlotly({ 
     build_scatter(data, input$xvar, input$yvar, input$search)  
   })
